@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OAI_ShippingRequest" Class="ShippingRequestDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=AAG-OMNI;Initial Catalog=OAI_ShippingRequest;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="OAI_ShippingRequestConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Shipping_Request" Member="Shipping_Requests">
+    <Type Name="Shipping_Request">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Ship_Type_Business_Private" Type="System.String" DbType="NVarChar(9)" CanBeNull="true" />
+      <Column Name="ShipInitatingDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="InitiatingDepartment" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="From_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Company" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Address_One" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Address_Two" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="From_Phone" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Shipped_By_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="Shipped_By_Time" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="Signature_Required" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Bill_To_Third_Party" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Logged_In_User" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Comments" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Completed_Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="From_Email_Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Country" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_City" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_State" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="To_Postal_Code" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Original_Cost" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+      <Column Name="Tracking_Num" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="Urgency" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
